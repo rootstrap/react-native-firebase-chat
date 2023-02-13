@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react-native-firebase-chat",
+    "slug": "react-native-firebase-chat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react-native-firebase-chat"
+}
