@@ -37,7 +37,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-example/web-node_modules/
+example/node_modules/
 example/npm-debug.log
 example/yarn-error.log
 
