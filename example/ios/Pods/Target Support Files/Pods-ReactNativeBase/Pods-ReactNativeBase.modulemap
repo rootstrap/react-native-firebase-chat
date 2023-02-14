@@ -1,4 +1,4 @@
-module Pods_ReactNativeBase {
+framework module Pods_ReactNativeBase {
   umbrella header "Pods-ReactNativeBase-umbrella.h"
 
   export *

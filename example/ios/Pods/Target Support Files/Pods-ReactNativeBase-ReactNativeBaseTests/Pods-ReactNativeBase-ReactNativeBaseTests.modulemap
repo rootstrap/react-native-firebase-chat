@@ -1,4 +1,4 @@
-module Pods_ReactNativeBase_ReactNativeBaseTests {
+framework module Pods_ReactNativeBase_ReactNativeBaseTests {
   umbrella header "Pods-ReactNativeBase-ReactNativeBaseTests-umbrella.h"
 
   export *
