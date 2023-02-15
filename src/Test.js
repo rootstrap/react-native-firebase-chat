@@ -6,6 +6,6 @@ const Test = () => (
         <Text>Esto es una prueba</Text>
         <Text>A ver si funciona!</Text>
     </View>
-)
+);
 
-export default Test
+export default Test;
