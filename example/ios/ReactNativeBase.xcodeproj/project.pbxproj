@@ -11,7 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		29FC1804299C0ACC00231D15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FC1803299C0ACC00231D15 /* GoogleService-Info.plist */; };
+		29837B6B299C591B0038D553 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29837B6A299C591A0038D553 /* GoogleService-Info.plist */; };
 		423F6AAB2888EE8900927F6A /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423F6AAA2888EE8900927F6A /* BootSplash.storyboard */; };
 		8A73CE7198C9E12B8B1B8D16 /* Pods_ReactNativeBase_ReactNativeBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8623C72182C2D3EB6243C024 /* Pods_ReactNativeBase_ReactNativeBaseTests.framework */; };
 		9DF86FCEB1AC1E5389656C4C /* Pods_ReactNativeBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB7C0DB0293766AF25517D1 /* Pods_ReactNativeBase.framework */; };
@@ -39,7 +39,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeBase/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeBase/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeBase/main.m; sourceTree = "<group>"; };
-		29FC1803299C0ACC00231D15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		29837B6A299C591A0038D553 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D98FE07C6B13EC18104DEB0 /* Pods-ReactNativeBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release.xcconfig"; sourceTree = "<group>"; };
 		4088188EB0721E64B5210F85 /* Pods-ReactNativeBase.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release-develop.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release-develop.xcconfig"; sourceTree = "<group>"; };
 		423F6AAA2888EE8900927F6A /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = ReactNativeBase/BootSplash.storyboard; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				29FC1803299C0ACC00231D15 /* GoogleService-Info.plist */,
+				29837B6A299C591A0038D553 /* GoogleService-Info.plist */,
 				8DA0F89C28753F1D00FBDAD7 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* ReactNativeBase */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -273,7 +273,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				423F6AAB2888EE8900927F6A /* BootSplash.storyboard in Resources */,
-				29FC1804299C0ACC00231D15 /* GoogleService-Info.plist in Resources */,
+				29837B6B299C591B0038D553 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
