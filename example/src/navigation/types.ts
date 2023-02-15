@@ -8,6 +8,7 @@ const AuthStackScreens = {
 
 const MainStackScreens = {
   Home: 'Home',
+  GeneralChat: 'GeneralChat',
 } as const;
 
 export enum Stacks {
