@@ -8,12 +8,17 @@ import styles from './styles';
 import type { HomePropTypes } from './types';
 
 
-const HomeScreen: React.FunctionComponent<HomePropTypes> = () => {
+const HomeScreen: React.FunctionComponent<HomePropTypes> = ({ navigation: { navigate } }) => {
   const { handleSignOut } = useGoogleSignIn();
+  const goToGeneralChat = () => navigate('GeneralChat');
   
   return (
   <SafeAreaView style={styles.container}>
     <Text accessibilityRole={'text'}>Home Screen</Text>
+    <Button
+      title="General Chat"
+      onPress={goToGeneralChat}
+    />
     <Button
       title="Sign Out"
       onPress={handleSignOut}
