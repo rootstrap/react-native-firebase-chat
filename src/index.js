@@ -1,3 +1,3 @@
-import Test from './Test'
+import GeneralChat from "./components/GeneralChat";
 
-export { Test };
+export { GeneralChat };

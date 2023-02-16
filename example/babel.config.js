@@ -1,23 +1,23 @@
 module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+  presets: ["module:metro-react-native-babel-preset"],
   plugins: [
     [
-      'module-resolver',
+      "module-resolver",
       {
-        root: ['./src'],
+        root: ["./src"],
         extensions: [
-          '.android.ts',
-          '.android.tsx',
-          '.ios.ts',
-          '.ios.tsx',
-          '.js',
-          '.json',
-          '.jsx',
-          '.ts',
-          '.tsx',
+          ".android.ts",
+          ".android.tsx",
+          ".ios.ts",
+          ".ios.tsx",
+          ".js",
+          ".json",
+          ".jsx",
+          ".ts",
+          ".tsx",
         ],
         alias: {
-          'react-native-firebase-chat': '../src',
+          "react-native-firebase-chat": "../src",
         },
       },
     ],
