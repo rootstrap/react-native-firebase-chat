@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 
 import styles from "./styles";
 
@@ -39,7 +39,14 @@ const Messages = ({ messages, user }) => {
     );
   };
 
-  return <View style={styles.messagesContainer}>{renderMessages()}</View>;
+  return (
+    <ScrollView
+      style={styles.messagesContainer}
+      showsVerticalScrollIndicator={false}
+    >
+      {renderMessages()}
+    </ScrollView>
+  );
 };
 
 export default Messages;

@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   generalChatContainer: {
     flex: 1,
     backgroundColor: "#caf8fc",
+    paddingBottom: 80,
     width: "100%",
   },
 
