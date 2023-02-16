@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
 
   messagesContainer: {
-    margin: 20,
+    margin: 15,
   },
 
   rowContainer: ({ isMyComment }) => ({
@@ -17,18 +17,30 @@ const styles = StyleSheet.create({
     justifyContent: isMyComment ? "flex-end" : "flex-start",
   }),
 
-  messageContainer: ({ isMyComment }) => ({
+  messageContainer: ({ addMargin, isMyComment, isSameUser }) => ({
     backgroundColor: isMyComment ? "#4b849c" : "skyblue",
     borderRadius: 10,
-    margin: 10,
+    marginHorizontal: addMargin ? 40 : 10,
+    marginTop: isSameUser ? 5 : 20,
     padding: 15,
-    width: "80%",
+    width: "70%",
   }),
 
   userPhoto: {
     borderRadius: 15,
     height: 30,
     width: 30,
+  },
+
+  userName: {
+    fontSize: 16,
+    fontWeight: "bold",
+    paddingBottom: 10,
+  },
+
+  message: {
+    fontSize: 14,
+    fontWeight: "400",
   },
 
   sendMessageContainer: {
