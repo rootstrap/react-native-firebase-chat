@@ -1,15 +1,19 @@
-import React from 'react'
-import { SafeAreaView, Text } from 'react-native';
-import { Test } from 'react-native-firebase-chat';
+import styles from "./styles";
+import type { GeneralChatPropTypes } from "./types";
+import firestore from "@react-native-firebase/firestore";
+import React from "react";
+import { View, Text } from "react-native";
+import { GeneralChat as GeneralFirebaseChat } from "react-native-firebase-chat";
+import { GlobalStore } from "storage/stores";
 
-import styles from './styles'
-import type { GeneralChatPropTypes } from './types';
+const GeneralChat: React.FunctionComponent<GeneralChatPropTypes> = () => {
+  const [user] = GlobalStore.user.useValueListener();
 
-const GeneralChat: React.FunctionComponent<GeneralChatPropTypes> = () => (
-    <SafeAreaView style={styles.container}>
-        <Text accessibilityRole={'text'}>General Chat Screen</Text>
-        <Test />
-    </SafeAreaView>
-);
+  return (
+    <View style={styles.container}>
+      <GeneralFirebaseChat firestore={firestore} user={user} />
+    </View>
+  );
+};
 
 export default GeneralChat;

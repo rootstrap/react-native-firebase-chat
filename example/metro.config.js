@@ -1,7 +1,7 @@
-const { getDefaultConfig } = require('@expo/metro-config')
-const path = require('path')
+const { getDefaultConfig } = require("@expo/metro-config");
+const path = require("path");
 
-const defaultConfig = getDefaultConfig(__dirname)
+const defaultConfig = getDefaultConfig(__dirname);
 
 defaultConfig.transformer = {
   getTransformOptions: async () => ({
@@ -14,22 +14,22 @@ defaultConfig.transformer = {
 
 defaultConfig.watchFolders = [
   ...defaultConfig.watchFolders,
-  path.resolve(__dirname, '../src'),
-]
+  path.resolve(__dirname, "../src"),
+];
 
 defaultConfig.resolver.extraNodeModules = new Proxy(
   {},
   {
     get: (target, name) => {
       if (target.hasOwnProperty(name)) {
-        return target[name]
+        return target[name];
       }
-      if (name === 'react-native-firebase-chat') {
-        return path.join(process.cwd(), `../src`)
+      if (name === "react-native-firebase-chat") {
+        return path.join(process.cwd(), `../src`);
       }
-      return path.join(process.cwd(), `node_modules/${name}`)
+      return path.join(process.cwd(), `node_modules/${name}`);
     },
-  },
-)
+  }
+);
 
-module.exports = defaultConfig
+module.exports = defaultConfig;
